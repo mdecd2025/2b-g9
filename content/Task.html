@@ -143,7 +143,7 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='Final.html'>Next</a> >> Final<br /><h1>Task</h1>
-<p><button id="add1to100">1 add to 100</button></p>
+<p><button id="add1to100">list</button></p>
 <!-- 導入 brython 程式庫 -->
 <p>
 <script src="./../cmsimde/static/brython.js"></script>
@@ -201,7 +201,7 @@ def run1():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c3a6deaf717f8f2739a4b1392a5ab10936e9693a/from_1_add_to_10_1.py"
+        url = "https://gist.githubusercontent.com/YUN4/5bf7e2f07394752458c28adb631b600d/raw/4ec8037cff480a5e392ca6dabd6943f279e42fe6/list1"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -236,7 +236,7 @@ def clear_bd1(ev):
 # 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
 Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
 
-add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
+add1to100_url = "https://gist.githubusercontent.com/YUN4/5bf7e2f07394752458c28adb631b600d/raw/4ec8037cff480a5e392ca6dabd6943f279e42fe6/list1"
 
 # 從 gist 取得程式碼
 add_src = open(add1to100_url).read()
@@ -269,7 +269,7 @@ doc["add1to100"].bind('click', add)
 <div id="brython_div1"></div>
 <!-- editor1 結束 --><hr/><!-- ########################################## -->
 <p>從 1 累加到 100 part2:</p>
-<p><button id="add1to100part2">list</button><button id="cango_three_gears">cango_three_gears</button><button id="bsnake">BSnake</button><button id="aitetris">AI Tetris</button></p>
+<p><button id="add1to100part2">1 add to 100</button><button id="cango_three_gears">cango_three_gears</button><button id="bsnake">BSnake</button><button id="aitetris">AI Tetris</button></p>
 <p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src2"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
 <p>
 <script type="text/python3">
@@ -345,10 +345,10 @@ def add2(ev):
     Ace4.run()
 
 # id 為 "add1to100part2" 的按鈕點按時, 執行 add 方法
-doc["list"].bind('click', add2)
+doc["add1to100part2"].bind('click', add2)
 # 以下為運用 button2 class 的通用 gist 程式導入區
 ################################## cango_three_gears start
-cango_three_gears_url = "https://gist.githubusercontent.com/YUN4/8a1b365d47fdb95387d9d568c6532e99/raw/5ea9e8f9fe63f2645bb5423dbdb33d8434494875/list"
+cango_three_gears_url = "https://gist.githubusercontent.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d/raw/f7a85d737d6723d5e34c526d5daee990ed92c32b/cango_three_gears_brython_div2.py"
 cango_three_gears = button2(cango_three_gears_url)
 doc["cango_three_gears"].bind("click", cango_three_gears.do)
 ################################## cango_three_gears end
