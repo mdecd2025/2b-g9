@@ -72,7 +72,7 @@ def run1():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/tseYU000/99193392f88ccb50605e24218bc943ee/raw/d38df4078d0cfc4a65490c2945cf4f1fbf07138e/w3"
+        url = "https://gist.githubusercontent.com/YUN4/fed3782ffe10bf16b3da2a9e7efe7159/raw/20034fcd1fcdfa9a917e68f8af2a004e60c79db3/11"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -107,7 +107,7 @@ def clear_bd1(ev):
 # 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
 Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
 
-add1to100_url = "https://gist.githubusercontent.com/tseYU000/99193392f88ccb50605e24218bc943ee/raw/d38df4078d0cfc4a65490c2945cf4f1fbf07138e/w3"
+add1to100_url = "https://gist.githubusercontent.com/YUN4/fed3782ffe10bf16b3da2a9e7efe7159/raw/20034fcd1fcdfa9a917e68f8af2a004e60c79db3/11"
 
 # 從 gist 取得程式碼
 add_src = open(add1to100_url).read()
@@ -256,8 +256,7 @@ doc["aitetris"].bind("click", aitetris.do)
 <p>
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
 </p>
-<p></p>
-<h2>task2</h2>
+<p></p><h2>task2</h2>
 <p><button id="add1to100">list</button></p>
 <!-- 導入 brython 程式庫 -->
 <p>
