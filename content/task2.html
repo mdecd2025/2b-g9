@@ -2,7 +2,7 @@
         <head>
         <title>cdproject</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
@@ -142,8 +142,8 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Final << <a href='Final.html'>Previous</a> <br /><h1>Brython</h1>
-<p><button id="add1to100">1 add to 100</button></p>
+    <div id="tipue_search_content">task1 << <a href='task1.html'>Previous</a> <a href='task2-2.html'>Next</a> >> task2-2<br /><h1>task2</h1>
+<p><button id="add1to100">list</button></p>
 <!-- 導入 brython 程式庫 -->
 <p>
 <script src="./../cmsimde/static/brython.js"></script>
@@ -201,7 +201,7 @@ def run1():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c3a6deaf717f8f2739a4b1392a5ab10936e9693a/from_1_add_to_10_1.py"
+        url = "https://gist.githubusercontent.com/YUN4/ca15651a264599342c7365d522e314cc/raw/c8002ea8f27aee822e68bbe511cdef6c303e2078/1"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -236,7 +236,7 @@ def clear_bd1(ev):
 # 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
 Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
 
-add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
+add1to100_url = "https://gist.githubusercontent.com/YUN4/ca15651a264599342c7365d522e314cc/raw/c8002ea8f27aee822e68bbe511cdef6c303e2078/1"
 
 # 從 gist 取得程式碼
 add_src = open(add1to100_url).read()
@@ -384,7 +384,8 @@ doc["aitetris"].bind("click", aitetris.do)
 <!-- editor2 結束 --><hr/>
 <p>
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
-</p><br />Final << <a href='Final.html'>Previous</a> </div>
+</p>
+<br />task1 << <a href='task1.html'>Previous</a> <a href='task2-2.html'>Next</a> >> task2-2</div>
         
     <!-- footer -->
       <div class="container">
