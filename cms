@@ -1,3 +1,0 @@
-#! /bin/bash
-# for Linux and Mac
-python3 cmsimde/wsgi.py
