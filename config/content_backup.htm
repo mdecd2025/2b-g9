@@ -991,7 +991,39 @@ doc["aitetris"].bind("click", aitetris.do)
 <h1>Exam</h1>
 <h2>Exam3</h2>
 <p>各組員及心得</p>
-<h3>41023206</h3><h3>41023232-Exam3操作及心得</h3>
+<h3>41023206-操作及心得</h3>
+<p><span style="background-color: #ffcc99;">Exam3-1</span><br/><br/></p>
+<ol>
+<li>開啟ipv6後,在cmd輸入 <span>webotsw --stream 開啟webots，webots會給一個port (<span style="background-color: #ffff99;">INFO: Streaming server listening on port 1235.</span>)。</span></li>
+<li><span>有port之後再瀏覽器貼上 http://[自己ipv6]:webots給的port/index.html，就能啟動串流。 </span></li>
+Add commentMore actions
+<li><span>若要開啟組員的串流，在webots streaming viwer中的 connect to 填入 ws://[<span style="color: #ff9900;">組員ipv6</span>]:<span style="color: #ff9900;">組員port號</span>  就能看到組員畫面了。</span></li>
+</ol>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/eVsL1fgljlE" width="560"></iframe></p>
+<p><span></span></p>
+<p><span style="background-color: #ffcc99;">Exam3-2</span></p>
+<ol>
+<li>開啟ipv6後,在cmd輸入 <span>webotsw --stream 開啟webots，webots會給一個port (<span style="background-color: #ffff99;">INFO: Streaming server listening on port 1236.</span>)。</span></li>
+<li><span>在瀏覽器貼上 http://[<span style="color: #ff9900;">自己ipv6</span>]:<span style="color: #ff9900;">webots給的port</span>/index.html，就能啟動串流。 </span></li>
+<li><span>若要開啟組員的串流，在webots streaming viwer中的 connect to 填入 ws://[<span style="color: #ff9900;">組員ipv6</span>]:<span style="color: #ff9900;">組員port號</span>  就能看到組員畫面了。</span></li>
+</ol>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/M0Q1pzaPCqo" width="560"></iframe></p>
+<p><span></span></p>
+<p><span style="background-color: #ffcc99;">Exam3-3</span></p>
+<ol>
+<li><span>在cmd輸入 </span><span>webotsw --stream 開啟webots</span></li>
+<li><span>輸入 pip install websocket-client websocket-server keyboard</span></li>
+<li><span>在cmd輸入 </span><span>webotsw --stream 開啟webots串流</span></li>
+<li><span>同樣在cmd中輸入 pip install websocket-client websocket-server keyboard</span></li>
+<li><span>在瀏覽器貼上 http://[<span style="color: #ff9900;">自己ipv6</span><span>]:</span><span style="color: #ff9900;">webots給的port</span><span>/index.html</span></span></li>
+<li><span><span>在webots streaming viwer中的 connect to 填入 ws://[<span style="color: #ff9900;">組員ipv6</span><span>]:</span><span style="color: #ff9900;">組員port號  </span></span></span></li>
+<li><span style="color: #000000;">看到組長的畫面後在SciTE 中開啟 <span>youbot_cartclient.py</span></span></li>
+<li><span style="color: #000000;"><span>修改其中的  server_ip = "your_ipv6_address"  ，your_ipv6_address 改為組長IPV6</span></span><span style="color: #000000;"></span></li>
+<li>選tool 中的GO ，就能在<span>webots streaming viwe 操作YOUBOT進行移動</span></li>
+</ol>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/UIVxRrlFIBs" width="560"></iframe></p>
+<p></p>
+<p>心得:一開始還不懂要怎麼用串流，在chatgpt、copliot上問了許多問題也沒有解決，經過詢問組長後有成功做出來了。</p><h3>41023232-Exam3操作及心得</h3>
 <p>EXAM3-1</p>
 <p>在控制台設好自己的<span>IPv6</span>網址關掉<span>IPv4</span>網址以<span> webotsw --stream </span>啟動個人所完成的<span> HW1 </span>模擬系統查看各自<span>webots</span>的端口在網頁上輸入<span>http:[</span>自己的<span>IPv6</span>網址<span>]:</span>查看各自<span>webots</span>的端口<span>/index.html</span>在<span>Connect to</span>內輸入<span>[</span>自己的<span>IPv6</span>網址<span>]: </span>查看各自<span>webots</span>的端口按下<span>Connect</span>即可看到自己<span>webots</span>的畫面按下<span>Disconnec</span>到<span>Connect to</span>內輸入<span>[</span>組員的<span>IPv6</span>網址<span>]: </span>組員<span>webots</span>的端口</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/T1t37uPoFT0?si=SXMHYV5HzWdfA8t0" title="YouTube video player" width="560"></iframe></p>
