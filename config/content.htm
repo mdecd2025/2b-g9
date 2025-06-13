@@ -990,7 +990,32 @@ doc["aitetris"].bind("click", aitetris.do)
 <p><a href="/downloads/link2.4檔案.7z">連趕2、4圖檔</a></p>
 <h1>Exam</h1>
 <h2>Exam3</h2>
-<h3>41023232-Exam3操作及心得</h3>
+<p>各組員及心得</p>
+<h3>41023206</h3>
+<p><span>Exam3-1</span><br/><br/></p>
+<ol>
+<li>開啟ipv6後,在cmd輸入 <span>webotsw --stream 開啟webots，webots會給一個port (<span>INFO: Streaming server listening on port 1235.</span>)。</span></li>
+<li><span>有port之後再瀏覽器貼上 http://[自己ipv6]:webots給的port/index.html，就能啟動串流。</span></li>
+<li><span>若要開啟組員的串流，在webots streaming viwer中的 connect to 填入 ws://[<span>組員ipv6</span>]:<span>組員port號</span>  就能看到組員畫面了。</span></li>
+</ol>
+<p><span></span></p>
+<p><span>Exam3-2</span></p>
+<ol>
+<li>開啟ipv6後,在cmd輸入 <span>webotsw --stream 開啟webots，webots會給一個port (<span>INFO: Streaming server listening on port 1236.</span>)。</span></li>
+<li><span>在瀏覽器貼上 http://[<span>自己ipv6</span>]:<span>webots給的port</span>/index.html，就能啟動串流。</span></li>
+<li><span>若要開啟組員的串流，在webots streaming viwer中的 connect to 填入 ws://[<span>組員ipv6</span>]:<span>組員port號</span>  就能看到組員畫面了。</span></li>
+</ol>
+<p><span></span></p>
+<p><span>Exam3-3</span></p>
+<ol>
+<li><span>在cmd輸入 </span><span>webotsw --stream 開啟webots</span></li>
+<li><span>輸入 pip install websocket-client websocket-server keyboard</span></li>
+<li><span>在瀏覽器貼上 http://[<span>自己ipv6</span><span>]:</span><span>webots給的port</span><span>/index.html</span></span></li>
+<li><span><span>在webots streaming viwer中的 connect to 填入 ws://[<span>組員ipv6</span><span>]:</span><span>組員port號  </span></span></span></li>
+<li><span>看到組長的畫面後在SciTE 中開啟 <span>youbot_cartclient.py</span></span></li>
+<li><span><span>修改其中的  server_ip = "your_ipv6_address"  ，your_ipv6_address 改為組長IPV6</span></span><span></span></li>
+<li>選tool 中的GO ，就能在<span>webots streaming viwe 操作YOUBOT進行移動</span></li>
+</ol><h3>41023232-Exam3操作及心得</h3>
 <p>EXAM3-1</p>
 <p>在控制台設好自己的<span>IPv6</span>網址關掉<span>IPv4</span>網址以<span> webotsw --stream </span>啟動個人所完成的<span> HW1 </span>模擬系統查看各自<span>webots</span>的端口在網頁上輸入<span>http:[</span>自己的<span>IPv6</span>網址<span>]:</span>查看各自<span>webots</span>的端口<span>/index.html</span>在<span>Connect to</span>內輸入<span>[</span>自己的<span>IPv6</span>網址<span>]: </span>查看各自<span>webots</span>的端口按下<span>Connect</span>即可看到自己<span>webots</span>的畫面按下<span>Disconnec</span>到<span>Connect to</span>內輸入<span>[</span>組員的<span>IPv6</span>網址<span>]: </span>組員<span>webots</span>的端口</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/T1t37uPoFT0?si=SXMHYV5HzWdfA8t0" title="YouTube video player" width="560"></iframe></p>
