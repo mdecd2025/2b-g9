@@ -990,7 +990,8 @@ doc["aitetris"].bind("click", aitetris.do)
 <p><a href="/downloads/link2.4檔案.7z">連趕2、4圖檔</a></p>
 <h1>Exam</h1>
 <h2>Exam3</h2>
-<p>各組員操作及心得</p><h3>41023206-操作及心得</h3>
+<p>各組員操作及心得</p>
+<h3>41023206-操作及心得</h3>
 <p><span style="background-color: #ffcc99;">Exam3-1</span><br/><br/></p>
 <ol>
 <li>開啟ipv6後,在cmd輸入 <span>webotsw --stream 開啟webots，webots會給一個port (<span style="background-color: #ffff99;">INFO: Streaming server listening on port 1235.</span>)。</span></li>
@@ -1022,7 +1023,8 @@ Add commentMore actions
 </ol>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/UIVxRrlFIBs" width="560"></iframe></p>
 <p></p>
-<p>心得:一開始還不懂要怎麼用串流，在chatgpt、copliot上問了許多問題也沒有解決，經過詢問組長後有成功做出來了。</p><h3>41023232-Exam3操作及心得</h3>
+<p>心得:一開始還不懂要怎麼用串流，在chatgpt、copliot上問了許多問題也沒有解決，經過詢問組長後有成功做出來了。</p>
+<h3>41023232-Exam3操作及心得</h3>
 <p>EXAM3-1</p>
 <p>在控制台設好自己的<span>IPv6</span>網址關掉<span>IPv4</span>網址以<span> webotsw --stream </span>啟動個人所完成的<span> HW1 </span>模擬系統查看各自<span>webots</span>的端口在網頁上輸入<span>http:[</span>自己的<span>IPv6</span>網址<span>]:</span>查看各自<span>webots</span>的端口<span>/index.html</span>在<span>Connect to</span>內輸入<span>[</span>自己的<span>IPv6</span>網址<span>]: </span>查看各自<span>webots</span>的端口按下<span>Connect</span>即可看到自己<span>webots</span>的畫面按下<span>Disconnec</span>到<span>Connect to</span>內輸入<span>[</span>組員的<span>IPv6</span>網址<span>]: </span>組員<span>webots</span>的端口</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/T1t37uPoFT0?si=SXMHYV5HzWdfA8t0" title="YouTube video player" width="560"></iframe></p>
@@ -1040,7 +1042,8 @@ Add commentMore actions
 <p><span>在網頁上輸入<span>http:[自己</span><span>的</span><span>IPv6</span><span>網址</span><span>]:</span><span>查看各自</span><span>webots</span><span>的端口</span><span>/index.html </span><span>在</span><span>Connect to</span><span>內輸入</span><span>[組長</span><span>的</span><span>IPv6</span><span>網址</span><span>]: </span><span>查看各自</span><span>webots</span><span>的端口</span><span>按下</span><span>Connect</span><span>即可看到組長</span><span>webots畫面</span></span></p>
 <p><span><span>按下上下左右即可操作機器人</span></span></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GacX6dC12pA?si=2v_ZS_ya1lffXW7B" title="YouTube video player" width="560"></iframe></p>
-<p>對於要怎麼利用<span>websocket連線操作一開始完全沒頭緒在看其他同學的操作步驟後順利連線上了</span></p><h1>Final</h1>
+<p>對於要怎麼利用<span>websocket連線操作一開始完全沒頭緒在看其他同學的操作步驟後順利連線上了</span></p>
+<h1>Final</h1>
 <p><span>期末協同專案執行過程影片、簡報與 PDf 報告檔案 (六人一組) (30%)</span></p>
 <p><span>題目: <span style="background-color: #ccffcc;">Webots 動態投籃模擬系統的協同設計</span></span></p>
 <p><span>說明: </span></p>
@@ -1151,7 +1154,18 @@ while supervisor.step(timestep) != -1:
                 node.remove()
             landed_balls.remove((def_name, landed_time))</pre>
 <p>Q：目前模擬結果無法刪除球sphere實體。</p>
-<p>檔案：</p><h1>Brython</h1>
+<p>檔案：<a href="/downloads/2b-g9final.7z">2b-g9final.7z</a></p>
+<p><span style="background-color: #ccffcc;">6/14</span></p>
+<p>針對6/13的問題解方法 : 在外觀中把實體隱藏即可，這樣不會影響到需要用到的senser</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">appearance Appearance {
+  material Material {
+    transparency 1
+  }
+}</pre>
+<p>啟動時發現的問題:</p>
+<ul>
+<li>若啟動後出現<span style="color: #ff6600;">cd2025_final_project_w17\controllers\feed_ball_loop\feed_ball_loop.py", line 4, in &lt;module&gt; <span style="color: #000000;">，需先在cmd中輸入 </span></span><code class="CodeBlock-module__codeWrap--npU94">pip --version  python --version 檢查有沒有安裝numpy ，如果沒有須輸入 </code><code class="CodeBlock-module__codeWrap--npU94">pip install numpy 。</code></li>
+</ul><h1>Brython</h1>
 <p><button id="add1to100">1 add to 100</button></p>
 <!-- 導入 brython 程式庫 -->
 <p>

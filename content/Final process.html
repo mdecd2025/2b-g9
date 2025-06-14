@@ -245,7 +245,19 @@ while supervisor.step(timestep) != -1:
                 node.remove()
             landed_balls.remove((def_name, landed_time))</pre>
 <p>Q：目前模擬結果無法刪除球sphere實體。</p>
-<p>檔案：<a href="./../downloads/2b-g9final.7z">2b-g9final.7z</a></p><br />Final << <a href='Final.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
+<p>檔案：<a href="./../downloads/2b-g9final.7z">2b-g9final.7z</a></p>
+<p><span style="background-color: #ccffcc;">6/14</span></p>
+<p>針對6/13的問題解方法 : 在外觀中把實體隱藏即可，這樣不會影響到需要用到的senser</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">appearance Appearance {
+  material Material {
+    transparency 1
+  }
+}</pre>
+<p>啟動時發現的問題:</p>
+<ul>
+<li>若啟動後出現<span style="color: #ff6600;">cd2025_final_project_w17\controllers\feed_ball_loop\feed_ball_loop.py", line 4, in &lt;module&gt; <span style="color: #000000;">，需先在cmd中輸入 </span></span><code class="CodeBlock-module__codeWrap--npU94">pip --version  python --version 檢查有沒有安裝numpy ，如果沒有須輸入 </code><code class="CodeBlock-module__codeWrap--npU94">pip install numpy 。</code><code class="CodeBlock-module__codeWrap--npU94"></code></li>
+</ul>
+<p><code class="CodeBlock-module__codeWrap--npU94"><a href="./../downloads/2b-g9final-1.zip">2b-g9final-1.zip</a></code></p><br />Final << <a href='Final.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
         
     <!-- footer -->
       <div class="container">
